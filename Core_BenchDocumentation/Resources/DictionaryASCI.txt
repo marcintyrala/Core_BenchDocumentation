@@ -1,0 +1,63 @@
+<Device Version="3.2.1" TestBedIndependent="False" ProtectionCode="False" Protection="D2T" Name="CONTROL_MANAGEMENT" Management="True" ComponentTree="COMPONENTS" Provider="" GroupName="Management" FileVersion="3" Rights="" ScriptRef="Script" Init="" Stop="">
+  <Description>CONTROL_MANAGEMENT
+Component responsible for UUT control and synchronizing all components due to UUT states.
+
+Required:
+MORPHEE 2017 (v3.0.3) or higher
+MANAGEMENT components in version 3.0.1 or higher</Description>
+  <Links>
+    <Link Name="MANAGEMENT" Reference="MANAGEMENT" Optional="True" />
+    <Link Name="TESTCELL_MANAGEMENT" Reference="TESTCELL_MANAGEMENT" Optional="True" />
+  </Links>
+  <Methods>
+    <Method Name="ACTIVATE_AFTER_TEST" Visibility="Public" Reference="ACTIVATE_AFTER_TEST.xcce" VisibleInScript="False" Precompile="False" />
+    <Method Name="BUTTON_ACTIVATE" Visibility="Private" Reference="BUTTON_ACTIVATE.xcce" VisibleInScript="False" Precompile="False" />
+    <Method Name="BUTTON_DEACTIVATE" Visibility="Private" Reference="BUTTON_DEACTIVATE.xcce" VisibleInScript="False" Precompile="False" />
+    <Method Name="CorePrepare" Visibility="Public" Reference="Script::CorePrepare" VisibleInScript="False" Precompile="False" />
+    <Method Name="CoreUnprepare" Visibility="Public" Reference="Script::CoreUnprepare" VisibleInScript="False" Precompile="False" />
+    <Method Name="INIT" Visibility="Private" Reference="INIT.xcce" VisibleInScript="False" Precompile="False" />
+    <Method Name="ON_SYSTEM_MODE_CHANGED" Visibility="Public" Reference="ON_SYSTEM_MODE_CHANGED.xcce" VisibleInScript="False" Precompile="False" />
+    <Method Name="ON_SYSTEM_STATE_CHANGED" Visibility="Public" Reference="ON_SYSTEM_STATE_CHANGED.xcce" VisibleInScript="False" Precompile="False" />
+    <Method Name="PARAMETERS" Visibility="Public" Reference="PARAMETERS.xcce" VisibleInScript="False" Precompile="False" />
+    <Method Name="PREPARE" Visibility="Private" Reference="PREPARE.xcce" VisibleInScript="False" Precompile="False" />
+    <Method Name="PREPARE_ALL" Visibility="Public" Reference="PREPARE_ALL.xcce" VisibleInScript="False" Precompile="False" />
+    <Method Name="PROCESS_AFTER_START_UUT" Visibility="Private" Reference="PROCESS_AFTER_START_UUT.xcce" VisibleInScript="False" Precompile="False" />
+    <Method Name="PROCESS_AFTER_STOP_UUT" Visibility="Private" Reference="PROCESS_AFTER_STOP_UUT.xcce" VisibleInScript="False" Precompile="False" />
+    <Method Name="PROCESS_INIT" Visibility="Private" Reference="PROCESS_INIT.xcce" VisibleInScript="False" Precompile="False" />
+    <Method Name="PROCESS_PREPARE" Visibility="Private" Reference="PROCESS_PREPARE.xcce" VisibleInScript="False" Precompile="False" />
+    <Method Name="PROCESS_SECURITY_ORANGE" Visibility="Private" Reference="PROCESS_SECURITY_ORANGE.xcce" VisibleInScript="False" Precompile="False" />
+    <Method Name="PROCESS_SECURITY_RED" Visibility="Private" Reference="PROCESS_SECURITY_RED.xcce" VisibleInScript="False" Precompile="False" />
+    <Method Name="PROCESS_SET_MODE" Visibility="Private" Reference="PROCESS_SET_MODE.xcce" VisibleInScript="False" Precompile="False" />
+    <Method Name="PROCESS_START_UUT" Visibility="Private" Reference="PROCESS_START_UUT.xcce" VisibleInScript="False" Precompile="False" />
+    <Method Name="PROCESS_STOP" Visibility="Private" Reference="PROCESS_STOP.xcce" VisibleInScript="False" Precompile="False" />
+    <Method Name="PROCESS_STOP_UUT" Visibility="Private" Reference="PROCESS_STOP_UUT.xcce" VisibleInScript="False" Precompile="False" />
+    <Method Name="PROCESS_UNPREPARE" Visibility="Private" Reference="PROCESS_UNPREPARE.xcce" VisibleInScript="False" Precompile="False" />
+    <Method Name="READY_TO_START_TEST" Visibility="Private" Reference="READY_TO_START_TEST.xcce" VisibleInScript="False" Precompile="False" />
+    <Method Name="RESET_ERROR_CHANNELS" Visibility="Private" Reference="RESET_ERROR_CHANNELS.xcce" VisibleInScript="False" Precompile="False" />
+    <Method Name="RESET_UUT_TIMER" Visibility="Private" Reference="RESET_UUT_TIMER.xcce" VisibleInScript="False" Precompile="False" />
+    <Method Name="SECURITY_ORANGE" Visibility="Private" Reference="SECURITY_ORANGE.xcce" VisibleInScript="False" Precompile="False" />
+    <Method Name="SECURITY_RED" Visibility="Private" Reference="SECURITY_RED.xcce" VisibleInScript="False" Precompile="False" />
+    <Method Name="SET_CHANNEL_LIMIT" Visibility="Public" Reference="SET_CHANNEL_LIMIT.xcce" VisibleInScript="False" Precompile="False" />
+    <Method Name="SET_MODE" Visibility="Private" Reference="SET_MODE.xcce" VisibleInScript="False" Precompile="False" />
+    <Method Name="SHOW_MANAGEMENT_SCREEN" Visibility="Private" Reference="SHOW_MANAGEMENT_SCREEN.xcce" VisibleInScript="False" Precompile="False" />
+    <Method Name="SHOW_USER_SCREEN" Visibility="Public" Reference="SHOW_USER_SCREEN.xcce" VisibleInScript="False" Precompile="False" />
+    <Method Name="START_UUT" Visibility="Public" Reference="START_UUT.xcce" VisibleInScript="False" Precompile="False" />
+    <Method Name="STATE_FLOW" Visibility="Private" Reference="STATE_FLOW.xcce" VisibleInScript="False" Precompile="False" />
+    <Method Name="STOP" Visibility="Private" Reference="STOP.xcce" VisibleInScript="False" Precompile="False" />
+    <Method Name="STOP_UUT" Visibility="Public" Reference="STOP_UUT.xcce" VisibleInScript="False" Precompile="False" />
+    <Method Name="SYSTEM_STATE_CHANGED" Visibility="Public" Reference="SYSTEM_STATE_CHANGED.xcce" VisibleInScript="False" Precompile="False" />
+    <Method Name="UNPREPARE" Visibility="Private" Reference="UNPREPARE.xcce" VisibleInScript="False" Precompile="False" />
+    <Method Name="UNPREPARE_ALL" Visibility="Public" Reference="UNPREPARE_ALL.xcce" VisibleInScript="False" Precompile="False" />
+    <Method Name="UpdateCurrentMode" Visibility="Public" Reference="Script::UpdateCurrentMode" VisibleInScript="False" Precompile="False" />
+    <Method Name="UUT_STATE_CHANGED" Visibility="Public" Reference="UUT_STATE_CHANGED.xcce" VisibleInScript="False" Precompile="False" />
+  </Methods>
+  <Instruments>
+    <Instrument Name="CMA_MAIN" MenuName="" Reference="CMA_MAIN.xins" Rights="" Screen1="False" Screen2="False" Screen3="False" Screen4="False" />
+    <Instrument Name="CMA_TIMERS" MenuName="" Reference="CMA_TIMERS.xins" Rights="" Screen1="False" Screen2="False" Screen3="False" Screen4="False" />
+    <Instrument Name="CMA_USER" MenuName="$STR:CMA_User$" Reference="CMA_USER.xins" Rights="" Screen1="False" Screen2="1" Screen3="False" Screen4="False" />
+    <Instrument Name="CMA_USER_CUSTOM" MenuName="" Reference="CMA_USER_CUSTOM.xins" Rights="" Screen1="False" Screen2="False" Screen3="False" Screen4="False" />
+  </Instruments>
+  <Extensions>
+    <Players />
+  </Extensions>
+</Device>
